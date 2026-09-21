@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1 | Nolen Kooistra</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --red: #c62828;
+      --red-dark: #9f1f1f;
+      --text: #222;
+      --muted: #666;
+      --surface: #fff;
+      --background: #f7f7f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: var(--red);
+      color: white;
+      padding: 1.25rem 1.5rem 3.5rem;
+    }
+
+    .header-content,
+    main {
+      width: min(100% - 3rem, 960px);
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 3.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover,
+    nav a:focus-visible,
+    nav a[aria-current="page"] {
+      border-bottom-color: white;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 6vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0.75rem 0 0;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      color: #ffe5e5;
+    }
+
+    main {
+      padding: 3rem 0;
+    }
+
+    .content-card {
+      background: var(--surface);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .content-card h2 {
+      color: var(--red-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 1.5rem 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .header-content,
+      main {
+        width: min(100% - 2rem, 960px);
+      }
+
+      nav {
+        justify-content: flex-start;
+        margin-bottom: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <nav aria-label="Main navigation">
+        <a href="index.html">About</a>
+        <a href="unit-1.html" aria-current="page">Unit 1</a>
+      </nav>
+      <h1>Unit 1: Lens-Based Analysis Essay</h1>
+      <p class="subtitle">Writing Process Archive</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-card" aria-labelledby="unit-heading">
+      <h2 id="unit-heading">Unit 1</h2>
+      <p>This page is an archive for the writing process behind the Lens-Based Analysis Essay.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Nolen Kooistra
+  </footer>
+</body>
+</html>
